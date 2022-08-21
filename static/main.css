@@ -1,0 +1,44 @@
+p, h1, h2, h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+}
+/* flex container */
+div{
+    border: solid 1px red;
+}
+.main-container-div{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+    /* header div */
+    .page-header-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 15vh;
+    }
+
+    /* main content div */
+    .main-content-div{
+        display: flex;
+        flex-direction: row;        
+        width: 100vw;
+        height: 90vh;
+    }
+
+    /* footer css */
+    .footer-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+    }
