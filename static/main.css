@@ -1,4 +1,4 @@
-p, h1, h2, h3{
+a, p, h1, h2, h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
@@ -6,9 +6,9 @@ body{
     background-color: #121212;
 }
 /* flex container */
-div{
+/* div{
     border: solid 1px red;
-}
+} */
 .main-container-div{
     display: flex;
     flex-direction: column;
@@ -34,10 +34,51 @@ div{
     .nav-bar-div{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         width: 100vw;
         height: 5vh;
     }
-
+        .nav-container{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .nav-direction{
+            float: left;
+        }
+        .nav-direction a{
+            display: block;
+            padding: 8px;
+            width: 5vw;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+        .nav-direction a:hover:not(.active){
+            background-color: rgb(39, 38, 38);
+            color: #ffffff;
+        }
+        .active{
+            background-color: bisque;
+        }
+        /* ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            display: block;
+            padding: 8px;
+            background-color: #dddddd;
+          } */
     /* main content div */
     .main-content-div{
         display: flex;
